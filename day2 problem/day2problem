@@ -4,7 +4,11 @@
 // Example:
 // Input: 'hello'   → Output: 'olleh'Input: 'world'   → Output: 'dlrow'
 // Hint: Use split(''), reverse(), and join('').
-
+function reverseString(str) {
+  let strsplit = str.split('').reverse().join('');
+  return strsplit
+}
+console.log(reverseString('hello word '));
 
 
 
