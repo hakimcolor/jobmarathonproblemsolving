@@ -3,3 +3,9 @@
 // Example:
 // Input: a = 5, b = 10 Output: a = 10, b = 5
 // Hint: Try using destructuring or arithmetic operators.
+
+function variabls(a, b) {
+  [a, b] = [b, a];
+  return [a, b];
+}
+console.log(variabls(5, 10));
