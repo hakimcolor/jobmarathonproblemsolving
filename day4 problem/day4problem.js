@@ -19,3 +19,9 @@ function mergeObjects(obj1, obj2) {
   return mergeObj;
 }
 console.log(mergeObjects({ a: 1 }, { b: 2 }));
+
+// Problem 18: FizzBuzz  [Easy]
+// Description: Write a function fizzBuzz(n) that prints numbers from 1 to n. For multiples of 3 print 'Fizz', multiples of 5 print 'Buzz', multiples of both print 'FizzBuzz'.
+// Example:
+// Input: 15 Output: 1,2,Fizz,4,Buzz,Fizz,7,8,Fizz,Buzz,11,Fizz,13,14,FizzBuzz
+// Hint: Check divisibility with the % operator in the right order.
