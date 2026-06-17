@@ -3,3 +3,11 @@
 // Example:
 // Input: 5  → Output: 120 (5×4×3×2×1)Input: 0  → Output: 1
 // Hint: Base case: factorial(0) = 1. Recursive case: n * factorial(n-1).
+function factorial(n) {
+  if (n < 0) return 'Invalid input';
+  if (n === 0 || n === 1) return 1;
+
+  return n * factorial(n - 1);
+}
+
+console.log(factorial(5));
