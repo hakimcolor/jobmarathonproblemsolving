@@ -15,3 +15,7 @@ console.log(countProperties({ a: 1, b: 2, c: 3 }));
 // Example:
 // Input: {a:1}, {b:2}  → Output: {a:1, b:2}
 // Hint: Use the spread operator or Object.assign().
+function mergeObjects(obj1, obj2) {
+  let mergeObj = { ...obj1, ...obj2 };
+  return mergeObj;
+} 
