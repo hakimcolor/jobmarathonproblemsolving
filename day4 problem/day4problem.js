@@ -25,3 +25,18 @@ console.log(mergeObjects({ a: 1 }, { b: 2 }));
 // Example:
 // Input: 15 Output: 1,2,Fizz,4,Buzz,Fizz,7,8,Fizz,Buzz,11,Fizz,13,14,FizzBuzz
 // Hint: Check divisibility with the % operator in the right order.
+function fizzBuzz(n) {
+  for (let i = 1; i <= n; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log('FizzBuzz');
+    } else if (i % 5 === 0) {
+      console.log('Buzz');
+    } else if (i % 3 === 0) {
+      console.log('Fizz');
+    } else {
+      console.log(i);
+    }
+  }
+}
+
+fizzBuzz(15);
