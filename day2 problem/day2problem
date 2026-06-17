@@ -1,4 +1,3 @@
-
 // Problem 6: Reverse a String  [Easy]
 // Description: Write a function reverseString(str) that returns the reverse of a given string.
 // Example:
@@ -6,13 +5,9 @@
 // Hint: Use split(''), reverse(), and join('').
 function reverseString(str) {
   let strsplit = str.split('').reverse().join('');
-  return strsplit
+  return strsplit;
 }
 console.log(reverseString('hello word '));
-
-
-
-
 
 // Problem 7: Count Vowels in a String  [Easy]
 // Description: Write a function countVowels(str) that counts and returns the number of vowels (a, e, i, o, u) in a string.
@@ -46,10 +41,8 @@ function isPalindrome(str) {
   } else {
     return false;
   }
-
 }
 console.log('hahahahah');
-
 
 // Problem 9: Capitalize First Letter of Each Word  [Easy]
 // Description: Write a function titleCase(str) that capitalizes the first letter of every word in a string.
@@ -64,11 +57,20 @@ function titleCase(str) {
   return capitalizedWords.join(' ');
 }
 
-console.log(titleCase("helo World  ! how aRe you "))
+console.log(titleCase('helo World  ! how aRe you '));
 // Problem 10: Count Occurrences of a Character  [Easy]
 // Description: Write a function countChar(str, char) that returns how many times a character appears in a string.
 // Example:
 // Input: 'banana', 'a'  → Output: 3
 // Hint: Use split(char).length - 1 or a loop.
 
-
+function countChar(str, char) {
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === char) {
+      count++;
+    }
+  }
+  return count;
+}
+console.log(countChar('banana', 'a'));
