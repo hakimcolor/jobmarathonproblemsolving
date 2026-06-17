@@ -44,4 +44,17 @@ function removeDuplicates (arr) {
   });
   return uniqueArray;
 }
-console.log(removeDuplicates ([1, 2, 3, 4, 5 ,5,1,6,7, 7,2,]) );
+console.log(removeDuplicates([1, 2, 3, 4, 5, 5, 1, 6, 7, 7, 2,]));
+
+// Problem 14: Flatten a Nested Array  [Medium]
+// Description: Write a function flattenArray(arr) that flattens one level of a nested array.
+// Example:
+// Input: [1, [2, 3], [4, 5]]  → Output: [1, 2, 3, 4, 5]
+// Hint: Use flat() or reduce() with concat().
+
+
+function flattenArray (arr) {
+return arr.flat();
+}
+
+console.log(flattenArray ([1, [2, 3], [4,5]]));
