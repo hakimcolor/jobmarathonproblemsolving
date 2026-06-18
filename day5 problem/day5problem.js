@@ -54,9 +54,16 @@ function makeCounter() {
 
 const c = makeCounter();
 
-console.log(c.increment());
-console.log(c.increment());
-console.log(c.increment());
+// console.log(c.increment());
+// console.log(c.increment());
+// console.log(c.increment());
 
-console.log(c.getCount());
-console.log(c.getCount());
+// console.log(c.getCount());
+// console.log(c.getCount());
+
+
+// Problem 24: Curry a Function  [Medium]
+// Description: Write a function curry(fn) that converts a function of two arguments into a curried version.
+// Example:
+// const add = curry((a,b) => a+b);add(2)(3); // 5
+// Hint: Return a function from inside a function.
