@@ -14,6 +14,27 @@ console.log(name, lastName, age);
 //  console.log(lastName);
 //  console.log(age);
 
+// Problem 27: Merge Arrays with Spread  [Easy]
+// Description: Write a function mergeArrays(...arrays) that accepts any number of arrays and merges them into one using the spread operator.
+// Example:
+// Input: [1,2], [3,4], [5] Output: [1,2,3,4,5]
+// Hint: Use rest parameters and spread inside reduce or flat.
+
+// const arra = [1,2];
+// const arrb = [3,4];
+// const arrc = [5];
+
+// const mergeArrays =[...arra, ...arrb, ...arrc];
+
+// console.log(mergeArrays);
+
+function mergeArrays(...arrays) {
+  const mergeArray = arrays.flat();
+  return mergeArray;
+}
+
+console.log(mergeArrays([1, 2], [3, 4], [5]));
+console.log(mergeArrays([1, 2], [3, 4], [5], [6, 7, 8], [9, 10]));
 
 // Problem 27: Merge Arrays with Spread  [Easy]
 // Description: Write a function mergeArrays(...arrays) that accepts any number of arrays and merges them into one using the spread operator.
@@ -29,40 +50,28 @@ console.log(name, lastName, age);
 
 // console.log(mergeArrays);
 
-function mergeArrays (...arrays) {
+function mergeArrays(...arrays) {
   const mergeArray = arrays.flat();
   return mergeArray;
-};
+}
 
-console.log(mergeArrays ([1, 2,], [3, 4], [5]));
-console.log(mergeArrays ([1, 2,], [3, 4], [5], [6, 7, 8], [9, 10]));
-
-
-// Problem 27: Merge Arrays with Spread  [Easy]
-// Description: Write a function mergeArrays(...arrays) that accepts any number of arrays and merges them into one using the spread operator.
-// Example:
-// Input: [1,2], [3,4], [5] Output: [1,2,3,4,5]
-// Hint: Use rest parameters and spread inside reduce or flat.
-
-// const arra = [1,2];
-// const arrb = [3,4];
-// const arrc = [5];
-
-// const mergeArrays =[...arra, ...arrb, ...arrc];
-
-// console.log(mergeArrays);
-
-function mergeArrays (...arrays) {
-  const mergeArray = arrays.flat();
-  return mergeArray;
-};
-
-console.log(mergeArrays ([1, 2,], [3, 4], [5]));
-console.log(mergeArrays ([1, 2,], [3, 4], [5], [6, 7, 8], [9, 10]));
-
+console.log(mergeArrays([1, 2], [3, 4], [5]));
+console.log(mergeArrays([1, 2], [3, 4], [5], [6, 7, 8], [9, 10]));
 
 // Problem 29: Async/Await Fetch Simulation  [Medium]
 // Description: Write an async function getUserData(id) that simulates fetching user data by awaiting a Promise that resolves after 500ms with a mock user object.
 // Example:
 // await getUserData(1);// returns {id:1, name:'Test User'}
-// Hint: Use async/await with a Promise that wraps setTimeout. 
+// Hint: Use async/await with a Promise that wraps setTimeout.
+async function getUserDate(id) {
+  await new Promise((resolve) => {
+    setTimeout(resolve, 500);
+  });
+  return {
+    id: id,
+    name: 'test user',
+  };
+}
+getUserData(1).then((data) => {
+  console.log(data);
+});
