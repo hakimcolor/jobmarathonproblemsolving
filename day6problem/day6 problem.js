@@ -4,6 +4,8 @@
 // const user = {firstName:'Sara', lastName:'Khan', age:25};// Extract: name='Sara', lastName='Khan', age=25
 // Hint: Use: const { firstName: name, lastName, age } = user;
 
+const { Profiler } = require('react');
+
 const user = { firstName: 'Sara', lastName: 'Khan', age: 25 };
 
 const { firstName: name, lastName, age } = user;
@@ -80,4 +82,9 @@ getUserData(1).then((data) => {
 // Description: Given a nested object that may have missing properties, safely access a deeply nested value using optional chaining (?.) and provide a default using nullish coalescing (??).
 // Example:
 // const user = {profile: null};const city = user?.profile?.address?.city ?? 'Unknown';// Output: 'Unknown'
-// Hint: Chain ?. for each level; use ?? for the fallback. 
+// Hint: Chain ?. for each level; use ?? for the fallback.
+const user = {
+  Profiler: null,
+};
+const city = user?.Profiler?.city ?? 'unknown';
+console.log(city);
