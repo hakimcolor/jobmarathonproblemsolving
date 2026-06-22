@@ -53,7 +53,7 @@ const unstableFetch = () => {
 (async () => {
   try {
     console.log('Starting retry process...');
-    const result = await retry(unstableFetch, 3); 
+    const result = await retry(unstableFetch, 3);
     console.log('Final Result:', result);
   } catch (err) {
     console.error('All attempts failed. Error:', err);
@@ -65,6 +65,27 @@ const unstableFetch = () => {
 // myPromiseAll([p1, p2, p3]).then(results => console.log(results));
 // Hint: Track resolved count and results array; reject on first failure.
 
-function kk {
-  
+function myPromiseAll(promises) {
+  return new Promise((resolve, reject) => {
+    const results = [];
+    let completed = 0;
+
+    if (promises.length === 0) {
+      resolve([]);
+      return;
+    }
+
+    promises.forEach((promise, index) => {
+      Promise.resolve(promise)
+        .then((value) => {
+          results[index] = value;
+          completed++;
+
+          if (completed === promises.length) {
+            resolve(results);
+          }
+        })
+        .catch(reject); 
+    });
+  });
 }
