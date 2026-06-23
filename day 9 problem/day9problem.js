@@ -19,14 +19,35 @@ function twoSum(arr, target) {
   return [];
 }
 
-
 const nums = [2, 7, 11, 15];
 const target = 9;
 
-console.log(twoSum(nums, target)); 
+console.log(twoSum(nums, target));
 
 // Problem 42: Check Anagram  [Easy]
 // Description: Write a function isAnagram(str1, str2) that returns true if the two strings are anagrams of each other.
 // Example:
 // Input: 'listen', 'silent'  → Output: trueInput: 'hello', 'world'   → Output: false
 // Hint: Sort both strings and compare, or use a character frequency map.
+function isAnagram(str1, str2) {
+  if (str1.length !== str2.length) {
+    return false;
+  }
+  const cloneStr1 = str1.toLowerCase().split('').sort().join('');
+  const cloneStr2 = str2.toLowerCase().split('').sort().join('');
+
+  const anagram = cloneStr1 === cloneStr2;
+  return anagram;
+}
+
+console.log(isAnagram('listen', 'silent'));
+console.log(isAnagram('hello', 'world'));
+
+// Problem 44: Valid Parentheses  [Medium]
+// Description: Write a function isValidParentheses(str) that returns true if the string has valid, balanced parentheses, brackets, and braces.
+// Example:
+// Input: '()[]{}'  → Output: trueInput: '([)]'    → Output: false
+// Hint: Use a stack (array). Push opening brackets, pop and compare for closing ones.
+
+
+// Problem 44: Valid Parentheses  [Medium]
