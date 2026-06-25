@@ -109,5 +109,5 @@ function binarySearch(arr, target) {
 }
 
 // Example
-console.log(binarySearch([1, 3, 5, 7, 9], 7)); // Output: 3
+console.log(binarySearch([1, 3, 5, 7, 9], 7)); 
 console.log(binarySearch([1, 3, 5, 7, 9], 4)); 
