@@ -110,4 +110,4 @@ function binarySearch(arr, target) {
 
 
 console.log(binarySearch([1, 3, 5, 7, 9], 7)); 
-console.log(binarySearch([1, 3, 5, 7, 9], 4)); 
+console.log(binarySearch([1, 3, 5, 7, 9], 4))
