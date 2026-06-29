@@ -43,3 +43,12 @@ console.log(longestWord('The quick suiiiiiiiiiiiiii brown fox'));
 // Example:
 // Input: [1,2,3,4,5], k=2 Output: [4,5,1,2,3]
 // Hint: Use slice and concat, or reverse the whole array then parts.
+
+
+
+
+// Problem 49: Roman to Integer  [Medium]
+// Description: Write a function romanToInt(s) that converts a Roman numeral string to an integer.
+// Example:
+// Input: 'III'   → Output: 3 Input: 'IX'    → Output: 9 Input: 'LVIII' → Output: 58
+// Hint: Map each symbol to its value; if a smaller value comes before a larger one, subtract it.
