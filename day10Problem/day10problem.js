@@ -9,6 +9,11 @@ function wordCount(sentence) {
   let words = sentence.split('');
   let counting = {};
   for (let i = 0; i < words.length; i++){
-    const word=words[i]
+    const word = words[i]
+    if (counting[word]) {
+      counting[word]++;
+    } else {
+      counting[word] = 1;
+    }
   }
 }
