@@ -25,3 +25,4 @@ console.log(wordCount('the cat sat on the mat'));
 // Example:
 // Input: 'The quick brown fox'Output: 'quick'
 // Hint: Split the sentence and use reduce() to track the longest.
+// ans is 
