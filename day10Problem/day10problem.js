@@ -18,3 +18,4 @@ function wordCount(sentence) {
   }
   return counting;
 }
+console.log(wordCount('the cat sat on the mat'));
