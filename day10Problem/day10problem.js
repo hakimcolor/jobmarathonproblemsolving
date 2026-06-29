@@ -26,3 +26,15 @@ console.log(wordCount('the cat sat on the mat'));
 // Input: 'The quick brown fox'Output: 'quick'
 // Hint: Split the sentence and use reduce() to track the longest.
 // ans is 
+function longestWord(sentence) {
+  const words = sentence.split(' ');
+  let longestW = words[0];
+
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > longestW.length) {
+      longestW = words[i];
+    }
+  }
+  return longestW;
+}
+// console.log(longestWord('The quick suiiiiiiiiiiiiii brown fox'));
