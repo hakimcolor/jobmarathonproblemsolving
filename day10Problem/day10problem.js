@@ -37,4 +37,4 @@ function longestWord(sentence) {
   }
   return longestW;
 }
-// console.log(longestWord('The quick suiiiiiiiiiiiiii brown fox'));
+console.log(longestWord('The quick suiiiiiiiiiiiiii brown fox'));
