@@ -16,4 +16,5 @@ function wordCount(sentence) {
       counting[word] = 1;
     }
   }
+  return counting;
 }
