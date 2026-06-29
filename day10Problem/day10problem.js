@@ -6,3 +6,7 @@
 
 
 // Ans is 
+function wordCount(sentence) {
+  let words = sentence.split('')
+  
+}
