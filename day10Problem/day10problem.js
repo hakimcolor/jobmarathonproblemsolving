@@ -46,6 +46,7 @@ console.log(longestWord('The quick suiiiiiiiiiiiiii brown fox'));
 function rotateArray(arr, k) {
   const n = arr.length;
   k = k % n;
+  return arr.slice(-k).concat(arr.slice(0, n - k));
 }
 
 // Problem 49: Roman to Integer  [Medium]
