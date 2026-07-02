@@ -50,6 +50,7 @@ function rotateArray(arr, k) {
 }
 const arr = [1, 2, 3, 4, 5];
 const k = 2;
+console.log(rotateArray(arr, k));
 
 // Problem 49: Roman to Integer  [Medium]
 // Description: Write a function romanToInt(s) that converts a Roman numeral string to an integer.
