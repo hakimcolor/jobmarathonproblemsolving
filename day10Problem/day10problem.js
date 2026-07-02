@@ -8,8 +8,8 @@
 function wordCount(sentence) {
   let words = sentence.split('');
   let counting = {};
-  for (let i = 0; i < words.length; i++){
-    const word = words[i]
+  for (let i = 0; i < words.length; i++) {
+    const word = words[i];
     if (counting[word]) {
       counting[word]++;
     } else {
@@ -25,7 +25,7 @@ console.log(wordCount('the cat sat on the mat'));
 // Example:
 // Input: 'The quick brown fox'Output: 'quick'
 // Hint: Split the sentence and use reduce() to track the longest.
-// ans is 
+// ans is
 function longestWord(sentence) {
   const words = sentence.split(' ');
   let longestW = words[0];
@@ -44,20 +44,15 @@ console.log(longestWord('The quick suiiiiiiiiiiiiii brown fox'));
 // Input: [1,2,3,4,5], k=2 Output: [4,5,1,2,3]
 // Hint: Use slice and concat, or reverse the whole array then parts.
 function rotateArray(arr, k) {
-  const n =arr.length
-  
+  const n = arr.length;
+  k = k % n;
 }
-
-
-
 
 // Problem 49: Roman to Integer  [Medium]
 // Description: Write a function romanToInt(s) that converts a Roman numeral string to an integer.
 // Example:
 // Input: 'III'   → Output: 3 Input: 'IX'    → Output: 9 Input: 'LVIII' → Output: 58
 // Hint: Map each symbol to its value; if a smaller value comes before a larger one, subtract it.
-
-
 
 // Problem 50: Pascal's Triangle Row  [Medium]
 // Description: Write a function pascalRow(n) that returns the nth row of Pascal's Triangle as an array.
