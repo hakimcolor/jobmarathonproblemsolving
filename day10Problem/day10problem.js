@@ -68,7 +68,14 @@ function romanToInt(s) {
     D: 500,
     M: 1000,
   };
-    let result = 0;
+  let result = 0;
+  for (let i = 0; i < s.length; i++) {
+    if (values[s[i]] < values[s[i + 1]]) {
+      result -= values[s[i]];
+    } else {
+      result += values[s[i]];
+    }
+  }
 }
 
 // Problem 50: Pascal's Triangle Row  [Medium]
