@@ -76,6 +76,7 @@ function romanToInt(s) {
       result += values[s[i]];
     }
   }
+  return result;
 }
 
 // Problem 50: Pascal's Triangle Row  [Medium]
