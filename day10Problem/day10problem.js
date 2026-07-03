@@ -58,6 +58,7 @@ console.log(rotateArray(arr, k));
 // Input: 'III'   → Output: 3 Input: 'IX'    → Output: 9 Input: 'LVIII' → Output: 58
 // Hint: Map each symbol to its value; if a smaller value comes before a larger one, subtract it.
 
+
 // Problem 50: Pascal's Triangle Row  [Medium]
 // Description: Write a function pascalRow(n) that returns the nth row of Pascal's Triangle as an array.
 // Example:
