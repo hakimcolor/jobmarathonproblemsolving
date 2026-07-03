@@ -78,6 +78,7 @@ function romanToInt(s) {
   }
   return result;
 }
+console.log(romanToInt('III'));  
 
 // Problem 50: Pascal's Triangle Row  [Medium]
 // Description: Write a function pascalRow(n) that returns the nth row of Pascal's Triangle as an array.
