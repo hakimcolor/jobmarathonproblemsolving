@@ -52,14 +52,22 @@ const arr = [1, 2, 3, 4, 5];
 const k = 2;
 console.log(rotateArray(arr, k));
 
-// Problem 49: Roman to Integer  
+// Problem 49: Roman to Integer
 // Description: Write a function romanToInt(s) that converts a Roman numeral string to an integer.
 // Example:
 // Input: 'III'   → Output: 3 Input: 'IX'    → Output: 9 Input: 'LVIII' → Output: 58
 // Hint: Map each symbol to its value; if a smaller value comes before a larger one, subtract it.
 
 function romanToInt(s) {
-  
+  const values = {
+    I: 1,
+    V: 5,
+    X: 10,
+    L: 50,
+    C: 100,
+    D: 500,
+    M: 1000,
+  };
 }
 
 // Problem 50: Pascal's Triangle Row  [Medium]
