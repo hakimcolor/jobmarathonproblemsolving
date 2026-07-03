@@ -68,6 +68,7 @@ function romanToInt(s) {
     D: 500,
     M: 1000,
   };
+    let result = 0;
 }
 
 // Problem 50: Pascal's Triangle Row  [Medium]
