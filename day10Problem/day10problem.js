@@ -87,5 +87,14 @@ console.log(romanToInt('III'));
 // Hint: Each element is the sum of the two elements above it from the previous row
 
 function pascalRow(n) {
-  
+  let row = [1];
+  for (let i = 1; i <= n; i++) {
+    let newRow = [1];
+    for (let j = 1; j < i; j++) {
+      newRow[j] = row[j - 1] + row[j];
+    }
+    newRow[i] = 1;
+    row = newRow;
+  }
+ 
 }
