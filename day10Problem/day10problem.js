@@ -96,5 +96,5 @@ function pascalRow(n) {
     newRow[i] = 1;
     row = newRow;
   }
- 
+  return row;
 }
