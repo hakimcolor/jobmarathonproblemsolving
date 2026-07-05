@@ -99,3 +99,4 @@ function pascalRow(n) {
   return row;
 }
 console.log(pascalRow(0));
+console.log(pascalRow(3));
