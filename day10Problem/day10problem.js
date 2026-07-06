@@ -113,7 +113,7 @@ console.log(pascalRow(3));
 // Hint: Loop through the string and check each character.
 function countVowels(str) {
   let count = 0;
-  
+    const vowels = 'aeiouAEIOU';
 
-  
+
 }
