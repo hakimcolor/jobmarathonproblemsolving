@@ -100,3 +100,14 @@ function pascalRow(n) {
 }
 console.log(pascalRow(0));
 console.log(pascalRow(3));
+
+
+
+// Problem 51: Count Vowels [Easy]
+// Description:
+// Write a function countVowels(str) that returns the total number of vowels
+// (a, e, i, o, u) in a string.
+// Example:
+// Input: "JavaScript"
+// Output: 3
+// Hint: Loop through the string and check each character.
