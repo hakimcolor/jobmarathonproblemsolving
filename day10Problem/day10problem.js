@@ -111,3 +111,6 @@ console.log(pascalRow(3));
 // Input: "JavaScript"
 // Output: 3
 // Hint: Loop through the string and check each character.
+function countVowels(str) {
+  
+}
