@@ -133,3 +133,13 @@ console.log(countVowels('Helloworlditsme'));
 // Input: "banana"
 // Output: { b:1, a:3, n:2 }
 // Hint: Loop through the string and store frequencies.
+
+
+function charCount(str) {
+  const count = {};
+  for (let char of str) {
+    count[char] = (count[char] || 0) + 1;
+  }
+  return count;
+}
+console.log(charCount('banana'));
