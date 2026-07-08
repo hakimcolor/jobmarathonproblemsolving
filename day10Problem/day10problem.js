@@ -101,8 +101,6 @@ function pascalRow(n) {
 console.log(pascalRow(0));
 console.log(pascalRow(3));
 
-
-
 // Problem 51: Count Vowels [Easy]
 // Description:
 // Write a function countVowels(str) that returns the total number of vowels
@@ -113,13 +111,13 @@ console.log(pascalRow(3));
 // Hint: Loop through the string and check each character.
 function countVowels(str) {
   let count = 0;
-    const vowels = 'aeiouAEIOU';
- for (let i = 0; i < str.length; i++) {
-   if (vowels.includes(str[i])) {
-     count++;
-   }
- }
-return count
+  const vowels = 'aeiouAEIOU';
+  for (let i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i])) {
+      count++;
+    }
+  }
+  return count;
 }
 console.log(countVowels('JavaScript'));
 console.log(countVowels('Hello World'));
@@ -134,12 +132,29 @@ console.log(countVowels('Helloworlditsme'));
 // Output: { b:1, a:3, n:2 }
 // Hint: Loop through the string and store frequencies.
 
+// function charCount(str) {
+//   const count = {};
+//   for (let char of str) {
+//     count[char] = (count[char] || 0) + 1;
+//   }
+//   return count;
+// }
+// console.log(charCount('banana'));
 
 function charCount(str) {
-  const count = {};
-  for (let char of str) {
-    count[char] = (count[char] || 0) + 1;
+  let count = {};
+
+  for (let i = 0; i < str.length; i++) {
+    const char = str[i];
+
+    if (count[char]) {
+      count[char]++;
+    } else {
+      count[char] = 1;
+    }
   }
+
   return count;
 }
+
 console.log(charCount('banana'));
