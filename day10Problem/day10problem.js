@@ -124,3 +124,12 @@ return count
 console.log(countVowels('JavaScript'));
 console.log(countVowels('Hello World'));
 console.log(countVowels('Helloworlditsme'));
+
+// Problem 52: Count Characters in a String [Easy]
+// Description:
+// Write a function charCount(str) that returns an object
+// with each character as a key and its frequency as the value.
+// Example:
+// Input: "banana"
+// Output: { b:1, a:3, n:2 }
+// Hint: Loop through the string and store frequencies.
