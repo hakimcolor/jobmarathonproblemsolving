@@ -123,4 +123,4 @@ return count
 }
 console.log(countVowels('JavaScript'));
 console.log(countVowels('Hello World'));
-console.log(countVowels('Helloworlditsme'))
+console.log(countVowels('Helloworlditsme'));
