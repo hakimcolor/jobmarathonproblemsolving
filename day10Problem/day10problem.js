@@ -172,7 +172,7 @@ function secondLargest(arr) {
   const unique = [...new Set(arr)];
 
   if (unique.length < 2) {
-    
+    return "No second largest number";
   }
 
 
