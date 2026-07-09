@@ -177,7 +177,7 @@ function secondLargest(arr) {
 
   unique.sort((a, b) => b - a);
 
-  
+  return unique[1];
 }
 
 
