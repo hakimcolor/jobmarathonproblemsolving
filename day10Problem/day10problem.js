@@ -180,5 +180,5 @@ function secondLargest(arr) {
   return unique[1];
 }
 
-
+console.log(secondLargest([10, 5, 8, 20, 20, 15])); 
 
