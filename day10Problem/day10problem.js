@@ -158,3 +158,12 @@ function charCount(str) {
 }
 
 console.log(charCount('banana'));
+
+// Problem 53: Find the Second Largest Number [Medium]
+// Description:
+// Write a function secondLargest(arr) that returns the second largest
+// unique number in an array.
+// Example:
+// Input: [10, 5, 8, 20, 20, 15]
+// Output: 15
+// Hint: Remove duplicates, then find the second largest.
