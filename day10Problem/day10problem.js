@@ -167,3 +167,16 @@ console.log(charCount('banana'));
 // Input: [10, 5, 8, 20, 20, 15]
 // Output: 15
 // Hint: Remove duplicates, then find the second largest.
+
+function secondLargest(arr) {
+  
+
+ 
+
+
+
+  
+}
+
+
+
