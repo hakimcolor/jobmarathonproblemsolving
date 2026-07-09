@@ -169,7 +169,7 @@ console.log(charCount('banana'));
 // Hint: Remove duplicates, then find the second largest.
 
 function secondLargest(arr) {
-  
+  const unique = [...new Set(arr)];
 
  
 
