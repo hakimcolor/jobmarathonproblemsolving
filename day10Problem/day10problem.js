@@ -181,4 +181,4 @@ function secondLargest(arr) {
 }
 
 console.log(secondLargest([10, 5, 8, 20, 20, 15])); 
-
+console.log(secondLargest([5, 5, 5,6])); 
