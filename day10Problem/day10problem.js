@@ -141,20 +141,20 @@ console.log(countVowels('Helloworlditsme'));
 // }
 // console.log(charCount('banana'));
 
-function charCount(str) {
-  let count = {};
+// function charCount(str) {
+//   let count = {};
 
-  for (let i = 0; i < str.length; i++) {
-    const char = str[i];
+//   for (let i = 0; i < str.length; i++) {
+//     const char = str[i];
 
-    if (count[char]) {
-      count[char]++;
-    } else {
-      count[char] = 1;
-    }
-  }
+//     if (count[char]) {
+//       count[char]++;
+//     } else {
+//       count[char] = 1;
+//     }
+//   }
 
-  return count;
-}
+//   return count;
+// }
 
-console.log(charCount('banana'));
+// console.log(charCount('banana'));
