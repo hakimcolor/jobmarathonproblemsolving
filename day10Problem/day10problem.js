@@ -175,7 +175,7 @@ function secondLargest(arr) {
     return "No second largest number";
   }
 
-
+  unique.sort((a, b) => b - a);
 
   
 }
