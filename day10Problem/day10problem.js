@@ -200,5 +200,5 @@ console.log(secondLargest([5, 5, 5, 6]));
 // then subtract the actual sum of the array.
 
 function missingNumber(arr) {
-  // Your code here
+  const n = arr.length + 1;
 }
