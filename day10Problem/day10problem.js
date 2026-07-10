@@ -4,7 +4,6 @@
 // Input: 'the cat sat on the mat'Output: {the: 2, cat: 1, sat: 1, on: 1, mat: 1}
 // Hint: Split by spaces, then reduce into a frequency object.
 
-
 function wordCount(sentence) {
   let words = sentence.split('');
   let counting = {};
@@ -172,7 +171,7 @@ function secondLargest(arr) {
   const unique = [...new Set(arr)];
 
   if (unique.length < 2) {
-    return "No second largest number";
+    return 'No second largest number';
   }
 
   unique.sort((a, b) => b - a);
@@ -180,10 +179,8 @@ function secondLargest(arr) {
   return unique[1];
 }
 
-console.log(secondLargest([10, 5, 8, 20, 20, 15])); 
-console.log(secondLargest([5, 5, 5,6])); 
-
-
+console.log(secondLargest([10, 5, 8, 20, 20, 15]));
+console.log(secondLargest([5, 5, 5, 6]));
 
 // Problem 54: Find Missing Number [Medium]
 // Description:
@@ -201,3 +198,7 @@ console.log(secondLargest([5, 5, 5,6]));
 // Hint:
 // Find the expected sum of numbers from 1 to n,
 // then subtract the actual sum of the array.
+
+function missingNumber(arr) {
+  // Your code here
+}
