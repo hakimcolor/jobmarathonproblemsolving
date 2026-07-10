@@ -182,3 +182,22 @@ function secondLargest(arr) {
 
 console.log(secondLargest([10, 5, 8, 20, 20, 15])); 
 console.log(secondLargest([5, 5, 5,6])); 
+
+
+
+// Problem 54: Find Missing Number [Medium]
+// Description:
+// Write a function missingNumber(arr) that returns the missing number
+// from an array containing numbers from 1 to n.
+// There will be exactly one number missing.
+//
+// Example:
+// Input: [1, 2, 4, 5]
+// Output: 3
+//
+// Input: [2, 3, 1, 5]
+// Output: 4
+//
+// Hint:
+// Find the expected sum of numbers from 1 to n,
+// then subtract the actual sum of the array.
