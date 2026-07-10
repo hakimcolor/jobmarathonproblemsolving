@@ -201,5 +201,9 @@ console.log(secondLargest([5, 5, 5, 6]));
 
 function missingNumber(arr) {
   const n = arr.length + 1;
-    let actualSum = 0;
+  let actualSum = 0;
+   for (let i = 0; i < arr.length; i++) {
+     actualSum += arr[i];
+   }
+
 }
