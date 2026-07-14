@@ -272,3 +272,7 @@ console.log(isAnagram('hello', 'world'));
 // - Use the Sliding Window technique.
 // - Keep track of the last index of each character using a Map.
 // - Move the left pointer whenever a duplicate character is found.
+
+function lengthOfLongestSubstring(s) {
+  
+}
