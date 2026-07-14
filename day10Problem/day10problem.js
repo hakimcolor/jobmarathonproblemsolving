@@ -233,3 +233,7 @@ console.log(missingNumber([1, 2, 4, 5]));
 // Convert both strings to lowercase,
 // sort their characters,
 // then compare the results.
+
+function isAnagram(str1, str2) {
+  
+}
