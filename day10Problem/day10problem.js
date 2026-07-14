@@ -237,3 +237,4 @@ function isAnagram(str1, str2) {
     return sortedStr1 === sortedStr2;
 
 }
+console.log(isAnagram('listen', 'silent'));
