@@ -274,5 +274,7 @@ console.log(isAnagram('hello', 'world'));
 // - Move the left pointer whenever a duplicate character is found.
 
 function lengthOfLongestSubstring(s) {
-  
+  let map = new Map();
+  let left = 0;
+  let maxLength = 0;
 }
