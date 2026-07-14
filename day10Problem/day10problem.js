@@ -239,3 +239,36 @@ function isAnagram(str1, str2) {
 }
 console.log(isAnagram('listen', 'silent'));
 console.log(isAnagram('hello', 'world')); 
+
+
+// Problem 56: Longest Substring Without Repeating Characters [Hard]
+
+// Description:
+// Given a string s, find the length of the longest substring
+// without repeating characters.
+//
+// A substring is a contiguous sequence of characters.
+//
+// Example 1:
+// Input: "abcabcbb"
+// Output: 3
+// Explanation: "abc" is the longest substring without repeating characters.
+//
+// Example 2:
+// Input: "bbbbb"
+// Output: 1
+// Explanation: "b"
+//
+// Example 3:
+// Input: "pwwkew"
+// Output: 3
+// Explanation: "wke" is the longest substring.
+//
+// Constraints:
+// - 0 <= s.length <= 5 * 10^4
+// - s consists of English letters, digits, symbols and spaces.
+//
+// Hint:
+// - Use the Sliding Window technique.
+// - Keep track of the last index of each character using a Map.
+// - Move the left pointer whenever a duplicate character is found.
