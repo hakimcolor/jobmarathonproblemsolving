@@ -208,3 +208,28 @@ function missingNumber(arr) {
   return expectedSum - actualSum;
 }
 console.log(missingNumber([1, 2, 4, 5]));
+
+
+
+
+// Problem 55: Check if Two Strings are Anagrams [Easy]
+
+// Description:
+// Write a function isAnagram(str1, str2) that returns true
+// if the two strings are anagrams of each other,
+// otherwise return false.
+//
+// An anagram means both strings contain the same letters
+// with the same frequency, but possibly in a different order.
+//
+// Example:
+// Input: "listen", "silent"
+// Output: true
+//
+// Input: "hello", "world"
+// Output: false
+//
+// Hint:
+// Convert both strings to lowercase,
+// sort their characters,
+// then compare the results.
