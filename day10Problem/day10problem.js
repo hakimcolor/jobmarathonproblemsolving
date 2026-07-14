@@ -209,9 +209,6 @@ function missingNumber(arr) {
 }
 console.log(missingNumber([1, 2, 4, 5]));
 
-
-
-
 // Problem 55: Check if Two Strings are Anagrams [Easy]
 
 // Description:
@@ -235,5 +232,6 @@ console.log(missingNumber([1, 2, 4, 5]));
 // then compare the results.
 
 function isAnagram(str1, str2) {
-  
+  const sortedStr1 = str1.toLowerCase().split('').sort().join('');
+  const sortedStr2 = str2.toLowerCase().split('').sort().join('');
 }
